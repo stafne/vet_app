@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vet - Download</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #f5f5f5;
+      color: #333;
+    }
+    .card {
+      background: #fff;
+      padding: 36px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,.06);
+    }
+    h1 { margin: 0 0 6px; color: #2c3e50; }
+    .subtitle { margin: 0 0 24px; color: #7f8c8d; }
+    h2 { color: #2c3e50; margin-top: 0; }
+    .section {
+      background: #ecf0f1;
+      padding: 24px;
+      border-radius: 8px;
+      margin: 20px 0;
+      text-align: center;
+    }
+    .btn {
+      display: inline-block;
+      background: #3498db;
+      color: #fff;
+      padding: 14px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 8px;
+    }
+    .btn:hover { background: #2980b9; }
+    .code {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-family: Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+      overflow-x: auto;
+      text-align: left;
+      word-break: break-all;
+    }
+    .steps .step { margin: 10px 0; }
+    small { color: #7f8c8d; }
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      font-size: 13px;
+      color: #7f8c8d;
+    }
+    footer a { color: #3498db; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🐾 Vet</h1>
+    <p class="subtitle">HP4 accelerometry importer and multi-channel waveform viewer for macOS</p>
+
+    <!-- ── Primary: ZIP download ─────────────────────────────────── -->
+    <div class="section">
+      <h2>📦 Download &amp; Install</h2>
+      <p>Download the latest release and run the one-line installer:</p>
+      <div class="code">bash &lt;(curl -fsSL https://stafne.github.io/vet_app/install_vet.sh)</div>
+      <br>
+      <a class="btn" href="https://github.com/stafne/vet/releases/latest/download/Vet.zip">
+        ⬇️ Download Latest ZIP
+      </a>
+      <a class="btn" style="background:#27ae60;"
+         href="https://github.com/stafne/vet/releases/latest">
+        View All Releases
+      </a>
+      <br><br>
+      <small>This link always points to the newest release.</small>
+    </div>
+
+    <!-- ── Terminal installer steps ─────────────────────────────── -->
+    <div class="section" style="text-align:left;">
+      <h2>🖥️ Terminal Installer (Recommended)</h2>
+      <ol class="steps">
+        <li class="step">Open Terminal: <strong>Cmd ⌘ + Space</strong>, type <em>Terminal</em>, press Enter</li>
+        <li class="step">Copy and paste this command, then press Enter:</li>
+      </ol>
+      <div class="code">bash &lt;(curl -fsSL https://stafne.github.io/vet_app/install_vet.sh)</div>
+      <p>The script will download the latest release from GitHub and install
+         <code>Vet.app</code> to your <strong>Applications</strong> folder.</p>
+    </div>
+
+    <!-- ── Manual ZIP steps ──────────────────────────────────────── -->
+    <div class="section" style="text-align:left;">
+      <h2>📋 Manual ZIP Installation</h2>
+      <ol class="steps">
+        <li class="step">Download <strong>Vet.zip</strong> using the button above.</li>
+        <li class="step">Double-click the ZIP to extract it.</li>
+        <li class="step">Drag <strong>Vet.app</strong> to your <strong>Applications</strong> folder.</li>
+        <li class="step">Open Applications, locate <strong>Vet.app</strong>, right-click it and choose <strong>Open</strong>.</li>
+        <li class="step">
+          If you see <em>"Vet.app was blocked because it is not from an identified developer"</em>,
+          go to:<br>
+          <strong>Apple menu → System Settings → Privacy &amp; Security</strong>,
+          scroll down to find the message for Vet.app and click <strong>Open Anyway</strong>.
+        </li>
+        <li class="step">The app will now launch. You only need to do this once.</li>
+      </ol>
+    </div>
+
+    <!-- ── Updates ───────────────────────────────────────────────── -->
+    <div class="section" style="text-align:left;">
+      <h2>🔄 Automatic Updates</h2>
+      <p>
+        Vet checks GitHub for new releases on startup and will prompt you to
+        download and install the update automatically. No manual steps required
+        after the initial installation.
+      </p>
+    </div>
+
+    <footer>
+      Repo: <a href="https://github.com/stafne/vet">stafne/vet</a> &nbsp;•&nbsp;
+      Support: <a href="https://github.com/stafne/vet/issues">GitHub Issues</a>
+    </footer>
+  </div>
+</body>
+</html>
